@@ -1,0 +1,187 @@
+ body.gaa-page-container {
+          display: block;
+          min-height: auto;
+          padding: 20px;
+        }
+
+        .gaa-controls {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 20px;
+          flex-wrap: wrap;
+          padding: 20px 0px 10px 10px;
+          box-sizing: border-box;
+        }
+
+        .gaa-search-bar {
+          padding: 10px;
+          width: 250px;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+        }
+
+        .gaa-sort-dropdown {
+          padding: 10px;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+        }
+
+        .gaa-items-container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+          padding: 20px;
+        }
+
+        .gaa-item-card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          height: 420px;
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+        }
+
+        .gaa-item-card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .gaa-img-div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 200px;
+          padding: 10px;
+        }
+
+        .gaa-item-image {
+          max-height: 100%;
+          max-width: 100%;
+          object-fit: contain;
+        }
+
+        .gaa-container {
+          flex: 1;
+          padding: 10px 16px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        .gaa-item-title {
+          font-weight: bold;
+          margin: 5px 0;
+          color: #333;
+        }
+
+        .gaa-item-type,
+        .gaa-item-category {
+          margin: 3px 0;
+          color: #666;
+          font-size: 14px;
+        }
+
+        .gaa-item-description {
+          margin: 5px 0;
+          font-size: 14px;
+          color: #444;
+          line-height: 1.4;
+        }
+
+        .gaa-item-location {
+          margin: 3px 0;
+          color: #888;
+          font-size: 13px;
+        }
+
+        .gaa-item-contact {
+    margin: 3px 0;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Courier New', monospace;
+}
+.gaa-icon {
+  margin-right: 6px;
+  color: #555; /* default color */
+}
+        .gaa-item-status {
+          margin: 5px 0;
+          padding: 4px 8px;
+          border-radius: 4px;
+          font-size: 12px;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        .gaa-item-status.OPEN {
+          background-color: #e8f5e8;
+          color: #2e7d2e;
+        }
+
+        .gaa-item-status.CLOSED {
+          background-color: #ffe6e6;
+          color: #d63031;
+        }
+
+        .gaa-item-status.default {
+          background-color: #fff3cd;
+          color: #856404;
+        }
+
+        .gaa-item-status.default {
+          background-color: #f5f5f5;
+          color: #666;
+        }
+
+        .gaa-no-results {
+          grid-column: 1 / -1;
+          display: block;
+          text-align: left;
+          padding: 40px 20px;
+          border-radius: 8px;
+          width: 100%;
+          margin: 0;
+          max-width: none;
+          box-sizing: border-box;
+        }
+
+        .gaa-no-results p {
+          font-size: 18px;
+          color: #666;
+          margin-bottom: 20px;
+        }
+
+        @media (max-width: 1200px) {
+          .gaa-items-container {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+
+        @media (max-width: 900px) {
+          .gaa-items-container {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          
+          .gaa-search-bar {
+            width: 200px;
+          }
+        }
+
+        @media (max-width: 600px) {
+          .gaa-items-container {
+            grid-template-columns: 1fr;
+          }
+          
+          .gaa-search-bar {
+            width: 100%;
+            max-width: 300px;
+          }
+          
+          .gaa-controls {
+            flex-direction: column;
+            gap: 15px;
+          }
+        }
